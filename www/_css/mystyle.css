@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+.row-header{
+	margin:0px auto;
+	padding:0px auto;
+}
+
+.row-content{
+	margin:0px auto;
+	padding:50px 0px 50px 0px;
+	border-bottom:1px ridge;
+	min-height:350px;
+}
+
+.row-footer{
+	background-color:#AFAFAF;
+	maring:0px auto;
+	padding:20px 0px 20px 0px;
+}
+
+.jumbotron{
+	margin:0px auto;
+	padding:70px 30px 70px 30px;
+	background-color:#7896CB;
+	color:floralwhite;
+}
+
+address{
+	font-size:80%;
+	margin:0px;
+	color:#0f0f0f;
+}
+body{
+	padding:50px 0px 0px 0px;
+	z-index:0;
+}
+.navbar-inverse{
+	background:#039;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus{
+	color:#fff;
+	background:#009;
+}
+
+/*lista do dropdown*/
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a,
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+
+	background-color: #E8E8E8;
+    color:#222;
+}
+
+/*lista do dropdown quando mouse sobre*/
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a:hover {
+    color:#eee;
+	background: #003399;
+}
+
+
+/*menu dropdown aberto*/
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+	color:#fff;
+	background:#009;
+}
+
+.tab-content{
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	padding:10px;
+}
+
+.affix {
+    top:100px;
+}
