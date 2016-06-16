@@ -111,7 +111,7 @@
             <div class="col-xs-12 col-sm-4">
             	<div class="panel panel-primary">
                 	<div class="panel-heading">
-                    	<h3>Facts At a Glance</h3>
+                    	<h3 data-toggle="tooltip" title="This data refer to final of 2014" data-placement="bottom">Facts At a Glance</h3><!--lembra que o tooltip precisa de javascript - que está no final do arquivo-->
                     </div>
                     <div class="panel-body">
                     	<dl class="dl-horizontal">
@@ -258,5 +258,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+		$(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+	</script>
     </body>
 </html>
