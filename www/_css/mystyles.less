@@ -1,0 +1,122 @@
+@white:#ffffff;
+@off-white:#eeeeee;
+@lt-gray:#dddddd;
+@indigo:#303f9f;
+@dark-indigo:#1a237e;
+@lt-indigo:#7986cb;
+
+/*Height variables*/
+@carousel-height:300px;
+
+.zero-margin(@pad-up-dn:0px,@pad-left-right:0px){
+	margin: 0px auto;
+	padding: @pad-up-dn @pad-left-right;
+}
+.row-header{
+	.zero-margin();
+}
+
+.row-content{
+	.zero-margin(50px,0px);
+	border-bottom:1px ridge;
+	min-height:400px;
+}
+
+.row-footer{
+	.zero-margin(20px,0px);
+	background-color:#AfAfAf;
+}
+.jumbotron{
+	.zero-margin(70px,30px);
+	background-color:@lt-indigo;
+    color:floralwhite;
+}
+
+.carousel{
+    background: @dark-indigo;
+    .item{
+        height: @carousel-height;
+        img{
+            left:0;
+            min-height: @carousel-height;
+            position: absolute;
+            top:0;
+        }
+    }
+}
+
+.navbar-inverse{
+    background: @indigo;
+    color:@white;
+    .navbar-nav>.active>a{
+        background: @dark-indigo;
+        color:@white;
+        &:hover{
+            background:@dark-indigo;
+            color:@white;
+        }
+        &:focus{
+            background: @dark-indigo;
+            color:@white;
+        }
+    }
+    .navbar-nav>.open>a{
+        background: @dark-indigo;
+        color:@white;
+        &:hover{
+            background:@dark-indigo;
+            color:@white;
+        }
+        &:focus{
+            background: @dark-indigo;
+            color:@white;
+        }
+    }
+
+
+.navbar-nav{
+    .open{
+        .dropdown>li>a{
+            background-color: @indigo;
+            color:@off-white;
+            &:hover{
+                color:#000000;
+            }
+        }
+        .dropdown-manu{
+            background-color: @indigo;
+            color:@off-white;
+        }
+    }
+}
+}
+
+.tab-content{
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	padding:10px;
+}
+
+.affix {
+    top:100px;
+}
+/* Carousel*/
+.carousel {
+    background:#009;
+}
+.carousel .item {
+  height: 300px;
+}
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+#carouselButtons{
+	position:absolute;
+	right:0px;
+	bottom:0px;	
+}

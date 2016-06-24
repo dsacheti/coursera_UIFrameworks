@@ -1,0 +1,6 @@
+Instalado node.js acompanhado do npm(node package manager-deve ser)
+instalar modulo lessc com cmd ou powershell assim:
+npm install lessc -g 
+(-g é para global, vai poder ser usado em qualquer projeto)
+para compilar o less para css
+lessc nomeArquivo.less > nomeArquivo.css

@@ -1,0 +1,25 @@
+{
+  "name": "uiframeworks",
+  "authors": [
+    "dsacheti <nacenei@yahoo.com.br>"
+  ],
+  "description": "projeto usado no curso UI Frameworks do coursera",
+  "main": "index.html",
+  "keywords": [
+    "conFusion",
+    "restaurant"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3"
+  }
+}

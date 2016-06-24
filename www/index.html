@@ -13,7 +13,7 @@
 <!--link rel="stylesheet" href="_css/bootstrap.min.css" /-->
 <!--link rel="stylesheet" href="_css/bootstrap-theme.min.css" /-->
 <link rel="stylesheet" href="_css/mystyle.css">
-<link rel="stylesheet" href="_css/font-awesome.min.css">
+<link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="_css/bootstrap-social.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -92,16 +92,6 @@
                 </div><!--modal-header-->
                 <div class="modal-body">
                 	
-                    <!--div class="col-xs-4 col-sm-2">
-        	       <div class="col-xs-12 col-sm-12">
-            	       <strong>Number of persons:</strong><br>
-                   </div>
-                   <div style="min-height:60px;"></div>
-                    <div class="col-xs-12 col-sm-12">
-            	       <strong>Date and Time:</strong>
-                    </div>
-                </div-->
-                <!--div class="col-xs-8 col-sm-10"-->
                 		<!--FORM NO MODAL-->
                         <form role="form">
                         	<div class="form-group">
@@ -205,8 +195,8 @@
                 </div>
                 <div class="col-xs-12 col-sm-2 text-center">
                 	<p style="padding:20px;"></p>
-                	<a class="btn btn-warning btn btn-block" data-toggle="modal" title="Or call us at +852 12345678" data-placement="bottom" data-target="#reservation">Reserve Table</a><br><br>
-                    <button type="button" class="btn btn-bitbucket" data-toggle="modal" data-target="#mModal">Promotion</button>
+                	<a class="btn btn-warning btn btn-block" title="Or call us at +852 12345678" data-placement="bottom" id="bt-reservation">Reserve Table</a><br><br>
+                    <button type="button" class="btn btn-bitbucket" data-toggle="modal" data-target="#mModal">Promotion</button><!-- data-target="#reservation"  data-toggle="modal" - seria para o bootstrap cuidar do modal, mas estou usando o javascript do bootstrap -->
                 </div>
             </div>
         </div>
@@ -261,6 +251,16 @@
                 	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
+                <!--botoes para pausar e continuar o movimento do slide-->
+                <div class="btn-group" id="carouselButtons">
+                	<button class="btn btn-danger btn-xs" id="carousel-pause">
+                    	<span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-danger btn-xs" id="carousel-play">
+                    	<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <!--botoes pause/play carousel-->
                 <!--Controles-->
             </div><!-- destaques -->
         </div><!-- col-xs-12 -->
@@ -418,7 +418,20 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    
+    <script>
+		$(document).ready(function(){
+			$('#destaques').carousel({interval:3000});
+			$('#carousel-pause').click(function(){
+				$('#destaques').carousel('pause');	
+			});
+			$('#carousel-play').click(function(){
+				$('#destaques').carousel('cycle');	
+			});
+			$('#bt-reservation').click(function(){
+				$('#reservation').modal();	
+			});
+		});
+	</script>
     <!--<script src="_js/bootstrap.min.js"></script>
     <script src="_js/jquery.js"></script>-->
 </body>

@@ -1,0 +1,20 @@
+Instalado node.js acompanhado do npm(node package manager-deve ser)
+instalar modulo bower com cmd ou powershell assim:
+npm install -g bower 
+(-g é para instalação global - não somente para a pasta onde se encontra o cmd)
+
+Depois de instalado precisa inicializar o bower com um arquivo bower.json para o projeto desejado
+É bom o cmd estar na pasta do projeto. 
+assim:
+bower init
+vai pedir: nome do projeto
+versaõ
+descrição, entre outros
+(ver o exemplo que tem nesta pasta (bower.json)
+
+instalar componentes para o projeto:
+BOOtSTRAP e suas dependencias (ele depende o jquery, então vai procurar jquery)
+bower install boostrap -S
+(o -S é para salvar a informação no bower.json)
+
+FONT-AWESOME - bower install font-awesome -S
